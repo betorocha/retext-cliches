@@ -18,7 +18,7 @@ var difference = require('array-differ');
 var nlcstToString = require('nlcst-to-string');
 var quotation = require('quotation');
 var search = require('nlcst-search');
-var list = require('no-cliches/lib/list');
+var list = require('retext-cliches/lib/list');
 
 /**
  * Attacher.
@@ -46,7 +46,7 @@ function attacher(processor, options) {
             var value = quotation(nlcstToString(match), '“', '”');
             var message = 'Warning: ' + value  + ' is a cliche';
 
-            message = file.warn(message, {
+            message = file.message(message, {
                 'start': match[0].position.start,
                 'end': match[match.length - 1].position.end
             });
