@@ -18,7 +18,7 @@ var difference = require('array-differ');
 var nlcstToString = require('nlcst-to-string');
 var quotation = require('quotation');
 var search = require('nlcst-search');
-var list = require('retext-cliches/lib/list');
+var list = require('no-cliches/lib/list');
 
 /**
  * Attacher.
